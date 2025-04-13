@@ -592,9 +592,7 @@ exports.googleLoginCallback = async (req, res, next) => {
       secure: true, // bắt buộc khi dùng HTTPS
       sameSite: "None", // cho phép gửi cookie cross-origin
     });
-    return res.redirect(
-      "https://multi-course-rfc1.vercel.app/course-list?token=" + token
-    );
+    return res.redirect("https://multi-course-rfc1.vercel.app/course-list");
     // res.status(200).json({
     //   message: "Login successful",
     //   token: token,
