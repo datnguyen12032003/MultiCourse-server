@@ -32,7 +32,7 @@ const AdminActivityHistory = require("./Routers/AdminActivityHistoryRouter");
 const RequestRouter = require("./Routers/RequestRouter");
 var app = express();
 const cors = require("cors");
-app.use(cors());
+// app.use(cors());
 
 app.connect = mongoose;
 
