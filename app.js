@@ -46,7 +46,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 app.use(
-  cors({ origin: "https://multi-course-rfc1.vercel.app/", credentials: true })
+  cors({ origin: "https://multicourse-client.onrender.com", credentials: true })
 );
 app.use("/api/users", UserRouter);
 app.use("/api/courses", CourseRouter);
